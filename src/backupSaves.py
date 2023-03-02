@@ -1,5 +1,5 @@
 ### config ###
-steamBasePath = R"D:\Program Files (x86)\Steam\userdata"
+steamBasePath = R"C:\Program Files (x86)\Steam\userdata"
 steamId = "54470748"
 gameId = "1446780"
 
@@ -17,7 +17,7 @@ from os import listdir, remove
 from os.path import isfile
 
 
-saveFolder = os.path.join(steamBasePath, steamId, gameId, "remote")
+saveFolder = os.path.join(steamBasePath, steamId, gameId)
 destination = os.path.join(backupFolder, "save")
 dateStamp = (
     datetime.isoformat(datetime.now())
